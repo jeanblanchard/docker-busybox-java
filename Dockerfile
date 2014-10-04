@@ -7,9 +7,9 @@ MAINTAINER Jean Blanchard <jean@blanchard.io>
 RUN opkg-install curl
 
 # Java Version
-ENV JAVA_VERSION_MAJOR 8
-ENV JAVA_VERSION_MINOR 20
-ENV JAVA_VERSION_BUILD 26
+ENV JAVA_VERSION_MAJOR 7
+ENV JAVA_VERSION_MINOR 67
+ENV JAVA_VERSION_BUILD 01
 
 # Download and unarchive Java
 RUN curl -kLOH "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie"\
