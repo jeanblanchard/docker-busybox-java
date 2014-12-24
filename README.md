@@ -8,6 +8,7 @@ This is based off [Busybox](http://www.busybox.net/) to keep the size minimal (a
 * `latest` or `8`: Oracle Java 8 (Server JRE)
 * `7`: Oracle Java 7 (Server JRE)
 * `jdk8`: Oracle Java 8 (JDK)
+* `jre8u5`: Oracle Java 8 update 5 build 13 (Server JRE)
 * `jdk7`: Oracle Java 7 (JDK)
 
 ### Usage
