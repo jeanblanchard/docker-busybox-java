@@ -8,8 +8,8 @@ RUN opkg-install curl
 
 # Java Version
 ENV JAVA_VERSION_MAJOR 8
-ENV JAVA_VERSION_MINOR 20
-ENV JAVA_VERSION_BUILD 26
+ENV JAVA_VERSION_MINOR 5
+ENV JAVA_VERSION_BUILD 13
 ENV JAVA_PACKAGE       server-jre
 
 # Download and unarchive Java
@@ -18,7 +18,7 @@ RUN curl -kLOH "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=ac
     gunzip ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz &&\
     tar -xf ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar -C /opt &&\
     rm ${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar &&\
-    ln -s /opt/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} /opt/jdk &&\
+    ln -s /opt/jdk1.${JAVA_VERSION_MAJOR}.0_0${JAVA_VERSION_MINOR} /opt/jdk &&\
     rm -rf /opt/jdk/*src.zip \
            /opt/jdk/lib/missioncontrol \
            /opt/jdk/lib/visualvm \
