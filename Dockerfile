@@ -8,8 +8,8 @@ RUN opkg-install curl
 
 # Java Version
 ENV JAVA_VERSION_MAJOR 7
-ENV JAVA_VERSION_MINOR 67
-ENV JAVA_VERSION_BUILD 01
+ENV JAVA_VERSION_MINOR 72
+ENV JAVA_VERSION_BUILD 14
 ENV JAVA_PACKAGE       server-jre
 
 # Download and unarchive Java
